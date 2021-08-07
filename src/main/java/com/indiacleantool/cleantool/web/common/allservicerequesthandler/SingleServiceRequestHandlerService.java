@@ -126,6 +126,10 @@ public class SingleServiceRequestHandlerService {
                     serviceRequest.setScheduleTime(serviceRequest.getTimeSlot().getTime().toString());
                 }
 
+                if(serviceRequest.getServices()!=null){
+                    serviceRequest.setServiceName(serviceRequest.getServices().getServiceName());
+                }
+
                 if(serviceRequest.getAssignedEmployee()!=null){
                     serviceRequest.setAssignedEmployeeName(serviceRequest.getAssignedEmployee().getFirstName()
                             + " "+serviceRequest.getAssignedEmployee().getLastName());
