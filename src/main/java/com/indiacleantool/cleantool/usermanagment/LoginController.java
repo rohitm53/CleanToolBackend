@@ -1,7 +1,7 @@
 package com.indiacleantool.cleantool.usermanagment;
 
-import com.indiacleantool.cleantool.datamodels.users.login.LoginRequest;
-import com.indiacleantool.cleantool.datamodels.users.login.LoginResponse;
+import com.indiacleantool.cleantool.commonmodels.usersmodels.login.dto.LoginRequest;
+import com.indiacleantool.cleantool.commonmodels.usersmodels.login.dto.LoginResponse;
 import com.indiacleantool.cleantool.exceptions.MapValidationExceptionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

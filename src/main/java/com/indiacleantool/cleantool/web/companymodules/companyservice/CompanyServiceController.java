@@ -1,6 +1,6 @@
 package com.indiacleantool.cleantool.web.companymodules.companyservice;
 
-import com.indiacleantool.cleantool.datamodels.companymodals.companyservice.exchange.CompanyServiceRequest;
+import com.indiacleantool.cleantool.web.companymodules.companyservice.models.dto.CompanyServiceRequest;
 import com.indiacleantool.cleantool.exceptions.MapValidationExceptionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,18 +21,20 @@ public class CompanyServiceController {
     private MapValidationExceptionService mapValidationExceptionService;
 
     @PostMapping
-    public ResponseEntity<?> saveCompanyService(@Valid @RequestBody CompanyServiceRequest request , BindingResult bindingResult){
+    public ResponseEntity<?> saveCompanyService(@Valid @RequestBody CompanyServiceRequest request,
+            BindingResult bindingResult) {
 
         ResponseEntity<?> errorMap = mapValidationExceptionService.validateRESTRequest(bindingResult);
-        if(errorMap!=null){
+        if (errorMap != null) {
             return errorMap;
         }
-        return new ResponseEntity<>(service.saveCompanyService(request.getCompanyCode(),request.getServiceCodes()), HttpStatus.OK);
+        return new ResponseEntity<>(service.saveCompanyService(request.getCompanyCode(), request.getServiceCodes()),
+                HttpStatus.OK);
     }
 
     @GetMapping("/{companyCode}")
-    public ResponseEntity<?> getServiceByCompanyCode(@PathVariable String companyCode){
-        return new ResponseEntity<>(service.getServicesForCompanyByCompanyCode(companyCode),HttpStatus.OK);
+    public ResponseEntity<?> getServiceByCompanyCode(@PathVariable String companyCode) {
+        return new ResponseEntity<>(service.getServicesForCompanyByCompanyCode(companyCode), HttpStatus.OK);
     }
 
 }

@@ -1,8 +1,6 @@
 package com.indiacleantool.cleantool.exceptions;
 
-import com.indiacleantool.cleantool.datamodels.common.errormodels.Error;
-import com.indiacleantool.cleantool.datamodels.common.errormodels.exchange.ErrorResponse;
-import com.indiacleantool.cleantool.datamodels.common.errormodels.exchange.GenericResponse;
+import com.indiacleantool.cleantool.commonmodels.errormodels.dto.ErrorResponse;
 import com.indiacleantool.cleantool.exceptions.asset.AssetCodeException;
 import com.indiacleantool.cleantool.exceptions.asset.AssetExceptionResponse;
 import com.indiacleantool.cleantool.exceptions.common.CommonGenericException;

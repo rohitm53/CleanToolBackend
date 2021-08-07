@@ -15,9 +15,9 @@ public class DashboardController {
     @Autowired
     private DashboardService dashboardService;
 
-    @GetMapping("/{companycode}")
-    public ResponseEntity<?> getDashnoardReport(@PathVariable String companycode){
-        return new ResponseEntity<>(dashboardService.getInitialDashboarReport(companycode), HttpStatus.OK);
+    @GetMapping("/{companyCode}")
+    public ResponseEntity<?> getDashboardReport(@PathVariable String companyCode){
+        return new ResponseEntity<>(dashboardService.getInitialDashboardReport(companyCode), HttpStatus.OK);
     }
 
 }

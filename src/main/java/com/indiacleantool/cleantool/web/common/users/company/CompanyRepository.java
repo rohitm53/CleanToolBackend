@@ -1,6 +1,6 @@
 package com.indiacleantool.cleantool.web.common.users.company;
 
-import com.indiacleantool.cleantool.datamodels.users.company.Company;
+import com.indiacleantool.cleantool.commonmodels.usersmodels.company.entity.Company;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

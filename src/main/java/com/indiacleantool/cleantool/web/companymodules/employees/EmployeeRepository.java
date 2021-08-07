@@ -1,6 +1,6 @@
 package com.indiacleantool.cleantool.web.companymodules.employees;
 
-import com.indiacleantool.cleantool.datamodels.users.employee.Employee;
+import com.indiacleantool.cleantool.commonmodels.usersmodels.employee.Employee;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.jpa.repository.query.Procedure;
 import org.springframework.data.repository.CrudRepository;

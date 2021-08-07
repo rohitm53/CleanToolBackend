@@ -1,7 +1,7 @@
 package com.indiacleantool.cleantool.usermanagment;
 
-import com.indiacleantool.cleantool.datamodels.users.login.Role;
-import com.indiacleantool.cleantool.datamodels.users.login.UserCredentials;
+import com.indiacleantool.cleantool.commonmodels.usersmodels.login.entity.Role;
+import com.indiacleantool.cleantool.commonmodels.usersmodels.login.entity.UserCredentials;
 import com.indiacleantool.cleantool.web.common.users.company.CompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;

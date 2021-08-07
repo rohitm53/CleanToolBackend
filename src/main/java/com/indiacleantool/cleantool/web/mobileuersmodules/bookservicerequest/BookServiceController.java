@@ -1,7 +1,7 @@
 package com.indiacleantool.cleantool.web.mobileuersmodules.bookservicerequest;
 
 import com.indiacleantool.cleantool.exceptions.MapValidationExceptionService;
-import com.indiacleantool.cleantool.datamodels.mobileusermodals.bookingservicerequest.ServiceRequestEntity;
+import com.indiacleantool.cleantool.web.mobileuersmodules.bookservicerequest.model.entity.ServiceRequestEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

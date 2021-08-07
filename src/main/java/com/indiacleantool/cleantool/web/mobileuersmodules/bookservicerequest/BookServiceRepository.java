@@ -1,6 +1,6 @@
 package com.indiacleantool.cleantool.web.mobileuersmodules.bookservicerequest;
 
-import com.indiacleantool.cleantool.datamodels.mobileusermodals.bookingservicerequest.ServiceRequestEntity;
+import com.indiacleantool.cleantool.web.mobileuersmodules.bookservicerequest.model.entity.ServiceRequestEntity;
 import org.springframework.data.jpa.repository.query.Procedure;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;

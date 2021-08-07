@@ -1,7 +1,7 @@
 package com.indiacleantool.cleantool.web.companymodules.timeslots;
 
 import com.indiacleantool.cleantool.dao.BaseDao;
-import com.indiacleantool.cleantool.datamodels.common.timeslots.TimeSlot;
+import com.indiacleantool.cleantool.commonmodels.timeslots.entity.TimeSlot;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.Query;

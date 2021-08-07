@@ -1,18 +1,10 @@
 package com.indiacleantool.cleantool.web.mobileuersmodules.servicedetails;
 
-import com.indiacleantool.cleantool.datamodels.users.employee.Employee;
 import com.indiacleantool.cleantool.exceptions.common.CommonGenericException;
-import com.indiacleantool.cleantool.web.companymodules.employees.EmployeeSprService;
-import com.indiacleantool.cleantool.web.companymodules.timeslots.TimeSlotsService;
-import com.indiacleantool.cleantool.datamodels.common.errormodels.Error;
-import com.indiacleantool.cleantool.datamodels.common.timeslots.TimeSlot;
-import com.indiacleantool.cleantool.datamodels.mobileusermodals.serviceprovidercompany.ServiceProviderCompanyDetails;
-import com.indiacleantool.cleantool.datamodels.mobileusermodals.serviceprovidercompany.ServiceProviderDetailResponse;
-import com.indiacleantool.cleantool.datamodels.users.company.Company;
-import com.indiacleantool.cleantool.datamodels.users.company.CompanyCodeView;
-import com.indiacleantool.cleantool.web.companymodules.companyservice.CompanyServiceSprService;
-import com.indiacleantool.cleantool.web.companymodules.employeeservice.EmployeeServiceSprService;
-import com.indiacleantool.cleantool.web.common.users.company.CompanyService;
+import com.indiacleantool.cleantool.commonmodels.timeslots.entity.TimeSlot;
+import com.indiacleantool.cleantool.commonmodels.mobileusermodels.serviceprovidercompany.dto.ServiceProviderCompanyDetails;
+import com.indiacleantool.cleantool.commonmodels.mobileusermodels.serviceprovidercompany.dto.ServiceProviderDetailResponse;
+import com.indiacleantool.cleantool.commonmodels.usersmodels.company.entity.Company;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

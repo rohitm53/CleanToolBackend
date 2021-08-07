@@ -1,7 +1,7 @@
 package com.indiacleantool.cleantool.web.companymodules.employees;
 
 import com.indiacleantool.cleantool.dao.BaseDao;
-import com.indiacleantool.cleantool.datamodels.users.employee.Employee;
+import com.indiacleantool.cleantool.commonmodels.usersmodels.employee.Employee;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.Query;

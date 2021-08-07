@@ -1,6 +1,6 @@
 package com.indiacleantool.cleantool.web.companymodules.employees;
 
-import com.indiacleantool.cleantool.datamodels.users.employee.Employee;
+import com.indiacleantool.cleantool.commonmodels.usersmodels.employee.Employee;
 import com.indiacleantool.cleantool.exceptions.MapValidationExceptionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

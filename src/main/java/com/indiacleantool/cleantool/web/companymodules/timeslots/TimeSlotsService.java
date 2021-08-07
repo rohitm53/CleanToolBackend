@@ -1,7 +1,7 @@
 package com.indiacleantool.cleantool.web.companymodules.timeslots;
 
 import com.indiacleantool.cleantool.exceptions.timeslots.TimeSlotCodeException;
-import com.indiacleantool.cleantool.datamodels.common.timeslots.TimeSlot;
+import com.indiacleantool.cleantool.commonmodels.timeslots.entity.TimeSlot;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

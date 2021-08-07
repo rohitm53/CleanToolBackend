@@ -1,9 +1,6 @@
 package com.indiacleantool.cleantool.web.companymodules.companyavailabletimeslots;
 
-
-import com.indiacleantool.cleantool.datamodels.common.errormodels.Error;
-import com.indiacleantool.cleantool.datamodels.common.errormodels.exchange.GenericResponse;
-import com.indiacleantool.cleantool.datamodels.companymodals.companytimeslots.exchange.GenerateCompanyTimeSlotRequest;
+import com.indiacleantool.cleantool.web.companymodules.companyavailabletimeslots.model.dto.GenerateCompanyTimeSlotRequest;
 import com.indiacleantool.cleantool.exceptions.MapValidationExceptionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -25,31 +22,21 @@ public class CompanyTimeSlotsController {
     private MapValidationExceptionService mapValidationExceptionService;
 
     @PostMapping
-    public ResponseEntity<?> generateCompanyTimeSlots(
-            @Valid
-            @RequestBody
-            GenerateCompanyTimeSlotRequest request ,
-            BindingResult result,
-            Principal principal
-    ){
+    public ResponseEntity<?> generateCompanyTimeSlots(@Valid @RequestBody GenerateCompanyTimeSlotRequest request,
+            BindingResult result, Principal principal) {
         ResponseEntity<?> errorMap = mapValidationExceptionService.validateRESTRequest(result);
-        if(errorMap!=null){
+        if (errorMap != null) {
             return errorMap;
         }
 
-        return new ResponseEntity<>(service.generateTimeSlots(request , principal.getName()) ,  HttpStatus.OK);
+        return new ResponseEntity<>(service.generateTimeSlots(request, principal.getName()), HttpStatus.OK);
 
     }
 
     @GetMapping("/{date}")
-    public ResponseEntity<?> getAvailableCompanyTimeSlotsByDate(
-            @PathVariable String date,
-            Principal principal
-    ){
-        return new ResponseEntity<>(
-                service.getAllCompanyAvailableTimeSlotsByDate(principal.getName(), date),
-                HttpStatus.OK
-        );
+    public ResponseEntity<?> getAvailableCompanyTimeSlotsByDate(@PathVariable String date, Principal principal) {
+        return new ResponseEntity<>(service.getAllCompanyAvailableTimeSlotsByDate(principal.getName(), date),
+                HttpStatus.OK);
     }
 
 }

@@ -1,6 +1,6 @@
 package com.indiacleantool.cleantool.web.common.users.mobileuser;
 
-import com.indiacleantool.cleantool.datamodels.users.mobileuser.MobileUser;
+import com.indiacleantool.cleantool.commonmodels.usersmodels.mobileuser.MobileUser;
 import com.indiacleantool.cleantool.exceptions.MapValidationExceptionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

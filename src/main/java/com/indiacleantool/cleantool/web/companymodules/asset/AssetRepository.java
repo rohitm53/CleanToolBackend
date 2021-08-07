@@ -1,11 +1,12 @@
 package com.indiacleantool.cleantool.web.companymodules.asset;
 
-import com.indiacleantool.cleantool.datamodels.companymodals.assets.Asset;
+import com.indiacleantool.cleantool.web.companymodules.asset.model.entity.Asset;
+
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface AssetRepository extends CrudRepository<Asset,Long> {
+public interface AssetRepository extends CrudRepository<Asset, Long> {
 
     Asset findByCode(String code);
 

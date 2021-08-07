@@ -4,29 +4,21 @@ import com.indiacleantool.cleantool.common.Constants;
 import com.indiacleantool.cleantool.exceptions.common.CommonGenericException;
 import com.indiacleantool.cleantool.security.SecurityConstants;
 import com.indiacleantool.cleantool.usermanagment.UserCredentialsRepository;
-import com.indiacleantool.cleantool.datamodels.users.employee.Employee;
-import com.indiacleantool.cleantool.datamodels.users.login.Role;
-import com.indiacleantool.cleantool.datamodels.users.login.UserCredentials;
+import com.indiacleantool.cleantool.commonmodels.usersmodels.employee.Employee;
+import com.indiacleantool.cleantool.commonmodels.usersmodels.login.entity.Role;
+import com.indiacleantool.cleantool.commonmodels.usersmodels.login.entity.UserCredentials;
 import com.indiacleantool.cleantool.exceptions.userexception.employees.EmployeeCodeException;
 import com.indiacleantool.cleantool.web.companymodules.companyavailabletimeslots.CompanyTimeSlotsService;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
-import javax.sql.DataSource;
 import javax.transaction.Transactional;
-import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.StringJoiner;
 
 
 @Service

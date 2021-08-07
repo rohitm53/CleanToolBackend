@@ -1,6 +1,6 @@
 package com.indiacleantool.cleantool.web.companymodules.employeeservice;
 
-import com.indiacleantool.cleantool.datamodels.companymodals.employeeservice.exchange.EmployeeServiceRequest;
+import com.indiacleantool.cleantool.web.companymodules.employeeservice.model.dto.EmployeeServiceRequest;
 import com.indiacleantool.cleantool.exceptions.MapValidationExceptionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -22,16 +22,18 @@ public class EmployeeServiceController {
     private MapValidationExceptionService mapValidationExceptionService;
 
     @PostMapping
-    public ResponseEntity<?> saveEmployeeService(@Valid @RequestBody EmployeeServiceRequest request , BindingResult result){
+    public ResponseEntity<?> saveEmployeeService(@Valid @RequestBody EmployeeServiceRequest request,
+            BindingResult result) {
         ResponseEntity<?> errorMap = mapValidationExceptionService.validateRESTRequest(result);
-        if(errorMap!=null){
+        if (errorMap != null) {
             return errorMap;
         }
         return new ResponseEntity<>(service.saveEmployeeService(request), HttpStatus.OK);
     }
 
     @GetMapping()
-    public ResponseEntity<?> getCompanyEmployeeService(Principal principal){
-        return new ResponseEntity<>(service.getEmployeeServiceRelationByCompanyCode(principal.getName()),HttpStatus.OK);
+    public ResponseEntity<?> getCompanyEmployeeService(Principal principal) {
+        return new ResponseEntity<>(service.getEmployeeServiceRelationByCompanyCode(principal.getName()),
+                HttpStatus.OK);
     }
 }
