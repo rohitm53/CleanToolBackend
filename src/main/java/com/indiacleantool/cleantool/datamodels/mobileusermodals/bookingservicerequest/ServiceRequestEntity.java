@@ -43,7 +43,7 @@ public class ServiceRequestEntity {
     private String mobileUserCode;
 
     @NotNull(message = "Scheduled date cannot be null")
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss[.SSS][.SS][.S]",shape=JsonFormat.Shape.STRING)
+    @JsonFormat(pattern = "yyyy-MM-dd",shape=JsonFormat.Shape.STRING)
     @JsonSerialize(using = ToStringSerializer.class)
     private LocalDate scheduleDate;
 
