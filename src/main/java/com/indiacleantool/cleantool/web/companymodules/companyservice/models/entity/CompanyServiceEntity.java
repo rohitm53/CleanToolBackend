@@ -7,20 +7,15 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@NamedStoredProcedureQueries({
-        @NamedStoredProcedureQuery(name = "sp_deleteCompanyServiceByCompanyCode",
-                procedureName = "sp_deleteCompanyServiceByCompanyCode",
-                parameters = {
-                    @StoredProcedureParameter(mode = ParameterMode.IN,name = "the_company_code",type = String.class)
-                })
-})
-public class CompanyService {
+@Table(name = "company_service")
+public class CompanyServiceEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String companyCode;
+
     private String serviceCode;
 
     @JsonFormat(pattern = "yyyy-mm-dd")

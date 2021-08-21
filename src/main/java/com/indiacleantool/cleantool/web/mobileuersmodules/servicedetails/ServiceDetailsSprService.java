@@ -1,10 +1,10 @@
 package com.indiacleantool.cleantool.web.mobileuersmodules.servicedetails;
 
-import com.indiacleantool.cleantool.exceptions.common.CommonGenericException;
 import com.indiacleantool.cleantool.commonmodels.timeslots.entity.TimeSlot;
-import com.indiacleantool.cleantool.commonmodels.mobileusermodels.serviceprovidercompany.dto.ServiceProviderCompanyDetails;
-import com.indiacleantool.cleantool.commonmodels.mobileusermodels.serviceprovidercompany.dto.ServiceProviderDetailResponse;
 import com.indiacleantool.cleantool.commonmodels.usersmodels.company.entity.Company;
+import com.indiacleantool.cleantool.exceptions.common.CommonGenericException;
+import com.indiacleantool.cleantool.web.mobileuersmodules.servicedetails.dto.ServiceProviderCompanyDetails;
+import com.indiacleantool.cleantool.web.mobileuersmodules.servicedetails.dto.ServiceProviderDetailResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

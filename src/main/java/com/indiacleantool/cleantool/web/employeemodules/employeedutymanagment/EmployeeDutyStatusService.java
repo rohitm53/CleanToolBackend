@@ -11,21 +11,21 @@ import java.time.format.DateTimeParseException;
 @Service
 public class EmployeeDutyStatusService {
 
-    @Autowired
-    private EmployeeDutyStatusRepository employeeDutyStatusRepository;
-
-    @Autowired
-    private EmployeeDutyStatusDao employeeDutyStatusDao;
+//    @Autowired
+//    private EmployeeDutyStatusRepository employeeDutyStatusRepository;
+//
+//    @Autowired
+//    private EmployeeDutyStatusDao employeeDutyStatusDao;
 
     public void updateEmployeeDuty(EmployeeDutyUpdateRequest request, String name) {
 
-        try{
-
-        }catch (DateTimeParseException exception){
-            throw new CommonGenericException("Invalid date/time");
-        }catch (SQLException exception){
-            throw new CommonGenericException("Error while at saving record");
-        }
+//        try{
+//
+//        }catch (DateTimeParseException exception){
+//            throw new CommonGenericException("Invalid date/time");
+//        }catch (SQLException exception){
+//            throw new CommonGenericException("Error while at saving record");
+//        }
 
     }
 }
